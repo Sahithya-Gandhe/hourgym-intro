@@ -5,6 +5,10 @@ import { PortalAccessCard } from '@/components/PortalAccessCard';
 export const metadata: Metadata = {
   title: 'Gym Owner Login',
   description: 'Access the HourGym gym owner portal.',
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function GymOwnerPage() {

@@ -5,6 +5,10 @@ import { PortalAccessCard } from '@/components/PortalAccessCard';
 export const metadata: Metadata = {
   title: 'Admin Panel',
   description: 'Access the HourGym admin command center.',
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function AdminPage() {
