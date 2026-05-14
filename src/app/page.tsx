@@ -8,7 +8,7 @@ import {
   Smartphone,
 } from 'lucide-react';
 import { BrandLogo } from '@/components/BrandLogo';
-import { ADMIN_LOGIN_URL, SITE_NAME } from '@/lib/site';
+import { SITE_NAME } from '@/lib/site';
 
 const features = [
   {
@@ -99,10 +99,6 @@ export default function HomePage() {
                 Gym owner login
               </Link>
             </div>
-            <p className="mt-4 text-xs leading-relaxed text-[#9d8a67]">
-              Operations login:{' '}
-              <span className="break-all text-[#d9c7a2]">{ADMIN_LOGIN_URL}</span>
-            </p>
           </div>
         </div>
       </section>
