@@ -22,10 +22,6 @@ export function PortalAccessCard({ title, description, audience }: PortalAccessC
         Open secure login
         <ArrowUpRight size={16} />
       </a>
-      <p className="mt-4 text-xs leading-relaxed text-[#9d8a67]">
-        You will be redirected to the HourGym operations console at{' '}
-        <span className="break-all text-[#d9c7a2]">{ADMIN_LOGIN_URL}</span>.
-      </p>
     </section>
   );
 }
