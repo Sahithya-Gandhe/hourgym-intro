@@ -7,9 +7,9 @@ export function TermsAndConditionsContent() {
       <p className="mt-2 text-sm text-[#9d8a67]">Last updated: May 14, 2026</p>
 
       <p className="mt-6">
-        These Terms &amp; Conditions (&quot;Terms&quot;) govern your access to the {SITE_NAME} website, the forthcoming
-        {SITE_NAME} mobile application, and related customer services offered by {SITE_NAME} (&quot;we&quot;,
-        &quot;us&quot;, or &quot;our&quot;). By using our services, you agree to these Terms.
+        These Terms &amp; Conditions (&quot;Terms&quot;) govern your access to the {SITE_NAME} website, mobile
+        application, and related customer services offered by {SITE_NAME} (&quot;we&quot;, &quot;us&quot;, or
+        &quot;our&quot;). By using our services, you agree to these Terms.
       </p>
 
       <h2>About {SITE_NAME}</h2>
@@ -67,8 +67,7 @@ export function TermsAndConditionsContent() {
       <h2>Cancellations and refunds</h2>
       <p>
         Cancellation windows, refund eligibility, and processing timelines are described in our{' '}
-        <a href="/refund">Refund Policy</a>. If a partner gym cancels a session or a payment issue occurs, refunds are
-        handled according to that policy and applicable law.
+        <a href="/refund">Refund &amp; Cancellation Policy</a>.
       </p>
 
       <h2>Acceptable use</h2>
