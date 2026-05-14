@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { BrandLogo } from '@/components/BrandLogo';
-import { NAV_LINKS, SITE_NAME } from '@/lib/site';
+import { CUSTOMER_NAV_LINKS, SITE_NAME } from '@/lib/site';
 
 export function SiteHeader() {
   return (
@@ -11,7 +11,7 @@ export function SiteHeader() {
           <span className="truncate text-lg font-bold text-[var(--brand-gold)] sm:text-xl">{SITE_NAME}</span>
         </Link>
         <nav className="hidden flex-wrap items-center justify-end gap-1 lg:flex">
-          {NAV_LINKS.map((item) => (
+          {CUSTOMER_NAV_LINKS.map((item) => (
             <Link
               key={item.href}
               href={item.href}
@@ -26,7 +26,7 @@ export function SiteHeader() {
             Menu
           </summary>
           <div className="absolute right-0 z-50 mt-2 w-[min(100vw-2rem,16rem)] rounded-xl border border-[var(--border)] bg-[rgba(20,20,22,.98)] p-2 shadow-2xl">
-            {NAV_LINKS.map((item) => (
+            {CUSTOMER_NAV_LINKS.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
