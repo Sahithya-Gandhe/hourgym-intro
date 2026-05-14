@@ -42,7 +42,7 @@ export function PrivacyPolicyContent() {
           identifiable individual. We use &quot;Personal Data&quot; and &quot;Personal Information&quot;
           interchangeably unless a law uses a specific term.
         </li>
-        <li>Service refers to the Application.</li>
+        <li>Service refers to the Application and this website.</li>
         <li>
           Service Provider means any natural or legal person who processes the data on behalf of the Company. It refers
           to third-party companies or individuals employed by the Company to facilitate the Service, to provide the
@@ -103,6 +103,14 @@ export function PrivacyPolicyContent() {
       </p>
       <p>
         You can enable or disable access to this information at any time, through Your Device settings.
+      </p>
+
+      <h3>Payment information</h3>
+      <p>
+        When you pay for a booking, payment details are processed by Razorpay, our payment gateway partner. We receive
+        booking payment status, transaction references, and limited payment metadata needed to confirm your booking,
+        provide support, and meet legal record-keeping obligations. We do not store your full card number, UPI PIN, or
+        net-banking credentials on our servers.
       </p>
 
       <h3>Use of Your Personal Data</h3>
