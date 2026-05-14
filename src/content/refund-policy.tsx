@@ -3,12 +3,13 @@ import { CONTACT_EMAIL, SITE_NAME } from '@/lib/site';
 export function RefundPolicyContent() {
   return (
     <article className="prose-legal w-full max-w-4xl overflow-x-hidden rounded-2xl border border-[var(--border)] bg-[rgba(20,20,22,.9)] p-4 sm:p-6 lg:p-8">
-      <h1 className="text-2xl font-bold text-[var(--brand-gold)] sm:text-3xl">Refund Policy</h1>
+      <h1 className="text-2xl font-bold text-[var(--brand-gold)] sm:text-3xl">Refund &amp; Cancellation Policy</h1>
       <p className="mt-2 text-sm text-[#9d8a67]">Last updated: May 14, 2026</p>
 
       <p className="mt-6">
-        This Refund Policy explains how {SITE_NAME} handles payments, cancellations, and refunds for hourly gym session
-        bookings made through the {SITE_NAME} mobile application. Payments are collected through Razorpay.
+        This Refund &amp; Cancellation Policy explains how {SITE_NAME} handles payments, cancellations, and refunds for
+        hourly gym session bookings made through the {SITE_NAME} mobile application. Payments are collected through
+        Razorpay.
       </p>
 
       <h2>What you are paying for</h2>
@@ -33,11 +34,10 @@ export function RefundPolicyContent() {
         payment provider&apos;s rules.
       </p>
 
-      <h2>Customer cancellations</h2>
+      <h2>Cancellation policy</h2>
       <p>
-        You may cancel a confirmed booking from the app when cancellation is available for that session. Refund
-        eligibility depends on how long before the scheduled session start time you cancel and on the partner gym&apos;s
-        published rules shown during booking.
+        You may cancel a confirmed booking from the app when cancellation is available for that session. The cancellation
+        window and any applicable charges are shown before you complete the booking.
       </p>
       <ul>
         <li>
@@ -45,10 +45,18 @@ export function RefundPolicyContent() {
           method used at checkout.
         </li>
         <li>
-          Cancellations made outside the allowed window, or no-shows, may not be eligible for a refund unless required
-          by law or approved by support after review.
+          Cancellations made outside the allowed window are treated as non-refundable unless required by law or
+          approved by support after review.
         </li>
+        <li>No-shows, late arrivals, or missed sessions without an approved cancellation are not eligible for refunds.</li>
       </ul>
+
+      <h2>When refunds are not provided</h2>
+      <p>
+        No refunds are provided for completed sessions, no-shows, late cancellations outside the published cancellation
+        window, or bookings that were used as confirmed at the partner gym. If you do not cancel within the allowed
+        window shown in the app, the booking amount is non-refundable except where applicable law requires otherwise.
+      </p>
 
       <h2>Partner gym cancellations or service issues</h2>
       <p>
@@ -84,7 +92,7 @@ export function RefundPolicyContent() {
 
       <h2>Policy updates</h2>
       <p>
-        We may update this Refund Policy from time to time. Material changes will be posted on this page with an
+        We may update this Refund &amp; Cancellation Policy from time to time. Material changes will be posted on this page with an
         updated &quot;Last updated&quot; date.
       </p>
 
