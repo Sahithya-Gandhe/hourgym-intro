@@ -5,15 +5,20 @@ export const LOGO_SRC = '/logo.png';
 
 export const CONTACT_EMAIL = 'hourgymapp@gmail.com';
 
+export const BUSINESS_LOCATION = 'Telangana, India';
+
 export const ADMIN_LOGIN_URL = 'https://hourgym-wcpg.onrender.com/login';
 
 export const API_BASE_URL = 'https://hourgym-wcpg.onrender.com';
 
-export const NAV_LINKS = [
+export const CUSTOMER_NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
-  { href: '/privacy', label: 'Privacy' },
-  { href: '/admin', label: 'Admin Panel' },
-  { href: '/gym-owner', label: 'Gym Owner' },
+] as const;
+
+export const LEGAL_LINKS = [
+  { href: '/privacy', label: 'Privacy Policy' },
+  { href: '/terms', label: 'Terms & Conditions' },
+  { href: '/refund', label: 'Refund Policy' },
 ] as const;
