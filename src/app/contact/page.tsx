@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { PageShell } from '@/components/PageShell';
-import { CONTACT_EMAIL } from '@/lib/site';
+import { BUSINESS_LOCATION, CONTACT_EMAIL } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
@@ -16,7 +16,7 @@ export default function ContactPage() {
       <section className="w-full max-w-3xl rounded-2xl border border-[var(--border)] bg-[rgba(20,20,22,.9)] p-5 sm:p-8">
         <h2 className="text-lg font-bold text-[#f5e4be] sm:text-xl">Email support</h2>
         <p className="mt-3 text-sm leading-relaxed text-[#d9c7a2]">
-          Send your message to{' '}
+          HourGym is a customer platform for hourly gym bookings in {BUSINESS_LOCATION}. Send your message to{' '}
           <a href={`mailto:${CONTACT_EMAIL}`} className="break-all text-[var(--brand-gold)] underline">
             {CONTACT_EMAIL}
           </a>

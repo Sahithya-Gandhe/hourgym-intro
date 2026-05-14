@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    'HourGym helps you discover partner gyms, book hourly training sessions, and pay securely in India.',
+    'HourGym helps customers discover partner gyms, book hourly training sessions, and pay securely through Razorpay in India.',
   icons: {
     icon: LOGO_SRC,
     apple: LOGO_SRC,
