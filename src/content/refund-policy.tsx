@@ -1,0 +1,99 @@
+import { CONTACT_EMAIL, SITE_NAME } from '@/lib/site';
+
+export function RefundPolicyContent() {
+  return (
+    <article className="prose-legal w-full max-w-4xl overflow-x-hidden rounded-2xl border border-[var(--border)] bg-[rgba(20,20,22,.9)] p-4 sm:p-6 lg:p-8">
+      <h1 className="text-2xl font-bold text-[var(--brand-gold)] sm:text-3xl">Refund Policy</h1>
+      <p className="mt-2 text-sm text-[#9d8a67]">Last updated: May 14, 2026</p>
+
+      <p className="mt-6">
+        This Refund Policy explains how {SITE_NAME} handles payments, cancellations, and refunds for hourly gym session
+        bookings made through the {SITE_NAME} mobile application. Payments are collected through Razorpay.
+      </p>
+
+      <h2>What you are paying for</h2>
+      <p>
+        You pay for confirmed hourly access to a partner gym for the date and time selected during checkout. The booking
+        summary and amount are shown before you authorize payment.
+      </p>
+
+      <h2>When a booking is confirmed</h2>
+      <ul>
+        <li>Items added to your cart are not confirmed until payment succeeds.</li>
+        <li>
+          A booking is confirmed only after Razorpay reports successful payment and our systems verify the transaction.
+        </li>
+        <li>Confirmed bookings appear in My Bookings inside the mobile app.</li>
+      </ul>
+
+      <h2>Failed or incomplete payments</h2>
+      <p>
+        If payment fails, is abandoned, or is not completed, no confirmed booking is created and no charge is treated
+        as final. Any temporary authorization shown by your bank or wallet provider should reverse according to your
+        payment provider&apos;s rules.
+      </p>
+
+      <h2>Customer cancellations</h2>
+      <p>
+        You may cancel a confirmed booking from the app when cancellation is available for that session. Refund
+        eligibility depends on how long before the scheduled session start time you cancel and on the partner gym&apos;s
+        published rules shown during booking.
+      </p>
+      <ul>
+        <li>
+          Cancellations made within the allowed window may receive a full or partial refund to the original payment
+          method used at checkout.
+        </li>
+        <li>
+          Cancellations made outside the allowed window, or no-shows, may not be eligible for a refund unless required
+          by law or approved by support after review.
+        </li>
+      </ul>
+
+      <h2>Partner gym cancellations or service issues</h2>
+      <p>
+        If a partner gym cancels a session, closes unexpectedly, or cannot honor a confirmed booking, we will work to
+        reschedule the session or issue a refund for the affected booking. Contact support with your booking details if
+        you arrive and cannot access the facility.
+      </p>
+
+      <h2>Duplicate or incorrect charges</h2>
+      <p>
+        If you believe you were charged twice for the same booking or charged an incorrect amount, email{' '}
+        <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> with your registered mobile number or email, gym name,
+        booking date, and Razorpay payment reference if available. We will investigate and coordinate a correction or
+        refund when appropriate.
+      </p>
+
+      <h2>Refund method and timelines</h2>
+      <p>
+        Approved refunds are initiated to the original payment method used at checkout through Razorpay. Processing
+        times depend on your bank, card network, or wallet provider and are typically completed within 5 to 10 business
+        days after approval, though some methods may take longer.
+      </p>
+      <p>
+        Refund status updates are shared by email or in-app notification when available. If you do not see a refund
+        after the expected period, contact us with your payment reference so we can trace the transaction.
+      </p>
+
+      <h2>Chargebacks and disputes</h2>
+      <p>
+        Please contact {SITE_NAME} support before raising a payment dispute so we can review the booking record. We may
+        share booking, attendance, and payment evidence with Razorpay or your bank as part of a lawful dispute review.
+      </p>
+
+      <h2>Policy updates</h2>
+      <p>
+        We may update this Refund Policy from time to time. Material changes will be posted on this page with an
+        updated &quot;Last updated&quot; date.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Refund and payment questions can be sent to{' '}
+        <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Include the gym name, booking date, and whether
+        Razorpay checkout completed.
+      </p>
+    </article>
+  );
+}
