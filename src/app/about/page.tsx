@@ -21,10 +21,6 @@ export default function AboutPage() {
             pay through Razorpay, and manage confirmed bookings. Optional location access helps show nearby gyms and
             distance estimates; the app remains usable if permission is denied.
           </p>
-          <p className="mt-3 text-sm leading-relaxed text-[#d9c7a2]">
-            The Android app is being prepared for Google Play publication. This website is the public customer landing
-            page for the forthcoming release.
-          </p>
         </section>
         <section className="rounded-2xl border border-[var(--border)] bg-[rgba(20,20,22,.9)] p-6">
           <h2 className="text-xl font-bold text-[#f5e4be]">What we sell</h2>
@@ -33,6 +29,10 @@ export default function AboutPage() {
             <li>Slot reservation and booking management for customers.</li>
             <li>Online payment collection for confirmed sessions through Razorpay.</li>
           </ul>
+          <p className="mt-3 text-sm leading-relaxed text-[#d9c7a2]">
+            See <a href="/pricing" className="text-[var(--brand-gold)] underline">Pricing &amp; Services</a> for what
+            customers pay for in the app.
+          </p>
         </section>
         <section className="rounded-2xl border border-[var(--border)] bg-[rgba(20,20,22,.9)] p-6 lg:col-span-2">
           <h2 className="text-xl font-bold text-[#f5e4be]">Customer support</h2>

@@ -8,7 +8,7 @@ import {
   Store,
 } from 'lucide-react';
 import { BrandLogo } from '@/components/BrandLogo';
-import { CONTACT_EMAIL, SITE_NAME } from '@/lib/site';
+import { CONTACT_EMAIL, LEGAL_LINKS, SITE_NAME } from '@/lib/site';
 
 const features = [
   {
@@ -43,12 +43,6 @@ const features = [
   },
 ];
 
-const legalLinks = [
-  { href: '/privacy', label: 'Privacy Policy' },
-  { href: '/terms', label: 'Terms & Conditions' },
-  { href: '/refund', label: 'Refund Policy' },
-];
-
 export default function HomePage() {
   return (
     <>
@@ -69,10 +63,6 @@ export default function HomePage() {
               {SITE_NAME} is a customer mobile app for discovering partner gyms, reserving hourly training slots, and
               paying securely through Razorpay. This website introduces the service, explains what we sell, and
               publishes our mandatory customer policies.
-            </p>
-            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[#d9c7a2] sm:text-base">
-              The Android app is in pre-release testing ahead of Google Play publication. Razorpay checkout in the app
-              is being enabled for the forthcoming public launch.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Link
@@ -122,7 +112,13 @@ export default function HomePage() {
             partners reviewing the HourGym service.
           </p>
           <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            {legalLinks.map((item) => (
+            <Link
+              href="/pricing"
+              className="inline-flex justify-center rounded-xl border border-[var(--border)] px-4 py-3 text-sm font-semibold text-[#f5e4be] hover:border-[var(--brand-gold)]"
+            >
+              Pricing &amp; Services
+            </Link>
+            {LEGAL_LINKS.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
