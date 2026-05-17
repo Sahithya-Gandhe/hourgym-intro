@@ -13,7 +13,7 @@ export default function ContactPage() {
       title="Contact Us"
       subtitle="Reach the HourGym team for customer support, partnerships, and privacy requests."
     >
-      <section className="w-full max-w-3xl rounded-2xl border border-[var(--border)] bg-[rgba(20,20,22,.9)] p-5 sm:p-8">
+      <section className="w-full rounded-2xl border border-[var(--border)] bg-[rgba(20,20,22,.9)] p-5 sm:p-8">
         <h2 className="text-lg font-bold text-[#f5e4be] sm:text-xl">Contact details</h2>
         <p className="mt-3 text-sm leading-relaxed text-[#d9c7a2]">
           HourGym is a customer platform for hourly gym bookings in {BUSINESS_LOCATION}.

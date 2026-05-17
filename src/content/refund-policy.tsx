@@ -2,7 +2,7 @@ import { CONTACT_EMAIL, SITE_NAME } from '@/lib/site';
 
 export function RefundPolicyContent() {
   return (
-    <article className="prose-legal w-full max-w-4xl overflow-x-hidden rounded-2xl border border-[var(--border)] bg-[rgba(20,20,22,.9)] p-4 sm:p-6 lg:p-8">
+    <article className="prose-legal w-full overflow-x-hidden rounded-2xl border border-[var(--border)] bg-[rgba(20,20,22,.9)] p-4 sm:p-6 lg:p-8">
       <h1 className="text-2xl font-bold text-[var(--brand-gold)] sm:text-3xl">Refund &amp; Cancellation Policy</h1>
       <p className="mt-2 text-sm text-[#9d8a67]">Last updated: May 14, 2026</p>
 
@@ -14,8 +14,8 @@ export function RefundPolicyContent() {
 
       <h2>What you are paying for</h2>
       <p>
-        You pay for confirmed hourly access to a partner gym for the date and time selected during checkout. The booking
-        summary and amount are shown before you authorize payment.
+        You pay for confirmed hourly access or a weekly, monthly, or yearly subscription period at a partner gym, as
+        selected during checkout. The booking summary and amount are shown before you authorize payment.
       </p>
 
       <h2>When a booking is confirmed</h2>
@@ -32,6 +32,13 @@ export function RefundPolicyContent() {
         If payment fails, is abandoned, or is not completed, no confirmed booking is created and no charge is treated
         as final. Any temporary authorization shown by your bank or wallet provider should reverse according to your
         payment provider&apos;s rules.
+      </p>
+
+      <h2>Subscription plan cancellations</h2>
+      <p>
+        Weekly, monthly, and yearly plans follow the cancellation and refund rules shown in the app at purchase. Unless
+        stated otherwise for a specific gym plan, subscription fees are non-refundable after the plan period has started
+        or after any included sessions have been used.
       </p>
 
       <h2>Cancellation policy</h2>

@@ -2,7 +2,7 @@ import { BUSINESS_LOCATION, CONTACT_EMAIL, SITE_NAME } from '@/lib/site';
 
 export function TermsAndConditionsContent() {
   return (
-    <article className="prose-legal w-full max-w-4xl overflow-x-hidden rounded-2xl border border-[var(--border)] bg-[rgba(20,20,22,.9)] p-4 sm:p-6 lg:p-8">
+    <article className="prose-legal w-full overflow-x-hidden rounded-2xl border border-[var(--border)] bg-[rgba(20,20,22,.9)] p-4 sm:p-6 lg:p-8">
       <h1 className="text-2xl font-bold text-[var(--brand-gold)] sm:text-3xl">Terms &amp; Conditions</h1>
       <p className="mt-2 text-sm text-[#9d8a67]">Last updated: May 14, 2026</p>
 
@@ -14,10 +14,9 @@ export function TermsAndConditionsContent() {
 
       <h2>About {SITE_NAME}</h2>
       <p>
-        {SITE_NAME} is an India-first platform that helps customers discover partner gyms and book hourly gym access.
-        Customers browse partner gyms, compare hourly plans, reserve training slots, and pay for confirmed sessions
-        through secure checkout powered by Razorpay. This website describes our customer offering, support channels, and
-        mandatory legal policies.
+        {SITE_NAME} is an India-first platform that helps customers discover partner gyms and book hourly gym access or
+        weekly, monthly, and yearly plans at discounted rates. Customers browse partner gyms, compare plans, reserve
+        training slots, and pay for confirmed sessions through secure checkout powered by Razorpay.
       </p>
 
       <h2>Eligibility</h2>
@@ -45,8 +44,9 @@ export function TermsAndConditionsContent() {
 
       <h2>Pricing and payments</h2>
       <p>
-        Prices for hourly gym sessions are displayed before checkout and may vary by partner gym, plan, and slot
-        availability. Taxes and fees, if applicable, are shown during checkout before you confirm payment.
+        Prices for hourly gym sessions and for weekly, monthly, or yearly subscription plans are displayed before
+        checkout and may vary by partner gym, plan length, and slot availability. Taxes and fees, if applicable, are
+        shown during checkout before you confirm payment.
       </p>
       <p>
         Payments are processed through Razorpay. We do not store your full card, UPI PIN, or net-banking credentials on

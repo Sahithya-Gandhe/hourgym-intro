@@ -2,7 +2,7 @@ import { CONTACT_EMAIL } from '@/lib/site';
 
 export function PrivacyPolicyContent() {
   return (
-    <article className="prose-legal w-full max-w-4xl overflow-x-hidden rounded-2xl border border-[var(--border)] bg-[rgba(20,20,22,.9)] p-4 sm:p-6 lg:p-8">
+    <article className="prose-legal w-full overflow-x-hidden rounded-2xl border border-[var(--border)] bg-[rgba(20,20,22,.9)] p-4 sm:p-6 lg:p-8">
       <h1 className="text-2xl font-bold text-[var(--brand-gold)] sm:text-3xl">Privacy Policy</h1>
       <p className="mt-2 text-sm text-[#9d8a67]">Last updated: May 14, 2026</p>
 

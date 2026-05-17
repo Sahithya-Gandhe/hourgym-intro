@@ -1,11 +1,12 @@
 import Link from 'next/link';
 import { BrandLogo } from '@/components/BrandLogo';
+import { SiteContainer } from '@/components/SiteContainer';
 import { CUSTOMER_NAV_LINKS, SITE_NAME } from '@/lib/site';
 
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-[var(--border)] bg-[rgba(9,9,9,0.88)] backdrop-blur-xl">
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:gap-4 sm:px-6 sm:py-4">
+      <SiteContainer className="flex items-center justify-between gap-3 py-3 sm:gap-4 sm:py-4">
         <Link href="/" className="flex min-w-0 items-center gap-2 sm:gap-3">
           <BrandLogo size="sm" priority />
           <span className="truncate text-lg font-bold text-[var(--brand-gold)] sm:text-xl">{SITE_NAME}</span>
@@ -37,7 +38,7 @@ export function SiteHeader() {
             ))}
           </div>
         </details>
-      </div>
+      </SiteContainer>
     </header>
   );
 }

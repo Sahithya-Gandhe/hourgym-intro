@@ -8,13 +8,15 @@ import {
   Store,
 } from 'lucide-react';
 import { BrandLogo } from '@/components/BrandLogo';
+import { SiteContainer } from '@/components/SiteContainer';
+import { SubscriptionPlans } from '@/components/SubscriptionPlans';
 import { CONTACT_EMAIL, LEGAL_LINKS, SITE_NAME } from '@/lib/site';
 
 const features = [
   {
     icon: MapPin,
     title: 'Discover nearby gyms',
-    copy: 'Browse partner gyms, compare hourly plans, and see distance when location is enabled.',
+    copy: 'Browse partner gyms, compare hourly and subscription plans, and see distance when location is enabled.',
   },
   {
     icon: CalendarClock,
@@ -39,7 +41,7 @@ const features = [
   {
     icon: Store,
     title: 'Verified partner gyms',
-    copy: 'HourGym partners with gyms that publish hourly plans, slot availability, and on-site access rules.',
+    copy: 'HourGym partners with gyms that publish hourly and subscription plans, slot availability, and on-site access rules.',
   },
 ];
 
@@ -51,7 +53,7 @@ export default function HomePage() {
           <div className="absolute top-1/4 -left-1/4 h-72 w-72 rounded-full bg-[rgba(230,57,45,0.15)] blur-3xl sm:h-96 sm:w-96" />
           <div className="absolute bottom-1/4 -right-1/4 h-72 w-72 rounded-full bg-[rgba(246,204,119,0.1)] blur-3xl sm:h-96 sm:w-96" />
         </div>
-        <div className="relative mx-auto grid w-full max-w-6xl gap-8 px-4 py-10 sm:gap-10 sm:px-6 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:py-20">
+        <SiteContainer className="relative grid w-full gap-8 py-10 sm:gap-10 sm:py-14 lg:grid-cols-2 lg:items-center lg:gap-12 lg:py-20">
           <div className="min-w-0">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#b09a73] sm:text-sm sm:tracking-[0.25em]">
               India-first fitness booking
@@ -59,17 +61,17 @@ export default function HomePage() {
             <h1 className="mt-4 text-3xl font-bold leading-tight text-[var(--brand-gold)] sm:text-4xl lg:text-5xl">
               Book hourly gym access with {SITE_NAME}
             </h1>
-            <p className="mt-5 max-w-2xl text-base leading-relaxed text-[#e8d7b4] sm:text-lg">
+            <p className="mt-5 text-base leading-relaxed text-[#e8d7b4] sm:text-lg">
               {SITE_NAME} is a customer mobile app for discovering partner gyms, reserving hourly training slots, and
-              paying securely through Razorpay. This website introduces the service, explains what we sell, and
-              publishes our mandatory customer policies.
+              paying securely through Razorpay. Choose weekly, monthly, or yearly plans at a discounted price if you
+              train regularly.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Link
-                href="/about"
+                href="/pricing"
                 className="inline-flex justify-center rounded-xl border border-[var(--border)] bg-[rgba(20,20,22,.9)] px-5 py-3 text-sm font-semibold text-[#f5e4be] transition hover:border-[var(--brand-gold)]"
               >
-                About the service
+                View pricing
               </Link>
               <Link
                 href="/contact"
@@ -84,14 +86,14 @@ export default function HomePage() {
               <BrandLogo size="lg" priority />
             </div>
             <p className="mt-6 text-sm leading-relaxed text-[#d9c7a2]">
-              Customer-facing mobile app for hourly gym bookings, Razorpay checkout, and booking history.
+              Hourly sessions plus weekly, monthly, and yearly plans at partner gyms — all in one app.
             </p>
             <div className="mt-6 rounded-2xl border border-[var(--border)] bg-[rgba(9,9,9,0.55)] p-4 text-left">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#b09a73]">What we sell</p>
               <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-relaxed text-[#d9c7a2]">
                 <li>Hourly gym session bookings at partner gyms.</li>
-                <li>Slot reservation and booking management in the mobile app.</li>
-                <li>Online payment collection for confirmed sessions through Razorpay.</li>
+                <li>Weekly, monthly, and yearly plans at discounted rates vs hourly.</li>
+                <li>Online payment for confirmed bookings through Razorpay.</li>
               </ul>
             </div>
             <p className="mt-6 text-sm text-[#f5e4be]">
@@ -101,55 +103,66 @@ export default function HomePage() {
               </a>
             </p>
           </div>
-        </div>
+        </SiteContainer>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-4 pb-8 sm:px-6">
-        <div className="rounded-2xl border border-[var(--border)] bg-[rgba(20,20,22,.82)] p-5 sm:p-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#b09a73]">Customer policies</p>
-          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-[#d9c7a2] sm:text-base">
-            Privacy, terms, refunds, and support contact details are published on this website for customers and payment
-            partners reviewing the HourGym service.
-          </p>
-          <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <Link
-              href="/pricing"
-              className="inline-flex justify-center rounded-xl border border-[var(--border)] px-4 py-3 text-sm font-semibold text-[#f5e4be] hover:border-[var(--brand-gold)]"
-            >
-              Pricing &amp; Services
-            </Link>
-            {LEGAL_LINKS.map((item) => (
+      <section className="border-y border-[var(--border)] bg-[rgba(15,15,17,0.5)] py-12 sm:py-16">
+        <SiteContainer>
+          <SubscriptionPlans />
+        </SiteContainer>
+      </section>
+
+      <section className="py-8 sm:py-10">
+        <SiteContainer>
+          <div className="rounded-2xl border border-[var(--border)] bg-[rgba(20,20,22,.82)] p-5 sm:p-6 lg:p-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#b09a73]">Customer policies</p>
+            <p className="mt-3 text-sm leading-relaxed text-[#d9c7a2] sm:text-base">
+              Privacy, terms, refunds, and support contact details are published on this website for customers and
+              payment partners reviewing the HourGym service.
+            </p>
+            <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Link
-                key={item.href}
-                href={item.href}
+                href="/pricing"
                 className="inline-flex justify-center rounded-xl border border-[var(--border)] px-4 py-3 text-sm font-semibold text-[#f5e4be] hover:border-[var(--brand-gold)]"
               >
-                {item.label}
+                Pricing &amp; Services
               </Link>
-            ))}
+              {LEGAL_LINKS.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="inline-flex justify-center rounded-xl border border-[var(--border)] px-4 py-3 text-sm font-semibold text-[#f5e4be] hover:border-[var(--brand-gold)]"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
+        </SiteContainer>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-4 pb-12 sm:px-6 sm:pb-16">
-        <div className="mb-8 max-w-2xl">
-          <h2 className="text-2xl font-bold text-[var(--brand-gold)] sm:text-3xl">What you can do</h2>
-          <p className="mt-3 text-sm text-[#d9c7a2] sm:text-base">
-            HourGym is designed for flexible gym access, transparent checkout, and clear customer support.
-          </p>
-        </div>
-        <div className="grid gap-4 sm:gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {features.map((feature) => (
-            <article
-              key={feature.title}
-              className="rounded-2xl border border-[var(--border)] bg-[rgba(20,20,22,.82)] p-5 sm:p-6"
-            >
-              <feature.icon className="text-[var(--brand-gold)]" size={24} />
-              <h3 className="mt-4 text-base font-bold text-[#f5e4be] sm:text-lg">{feature.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-[#d9c7a2]">{feature.copy}</p>
-            </article>
-          ))}
-        </div>
+      <section className="pb-12 sm:pb-16">
+        <SiteContainer>
+          <div className="mb-8">
+            <h2 className="text-2xl font-bold text-[var(--brand-gold)] sm:text-3xl">What you can do</h2>
+            <p className="mt-3 text-sm text-[#d9c7a2] sm:text-base">
+              HourGym is designed for flexible gym access, subscription savings, transparent checkout, and clear
+              customer support.
+            </p>
+          </div>
+          <div className="grid gap-4 sm:gap-5 md:grid-cols-2 xl:grid-cols-3">
+            {features.map((feature) => (
+              <article
+                key={feature.title}
+                className="rounded-2xl border border-[var(--border)] bg-[rgba(20,20,22,.82)] p-5 sm:p-6"
+              >
+                <feature.icon className="text-[var(--brand-gold)]" size={24} />
+                <h3 className="mt-4 text-base font-bold text-[#f5e4be] sm:text-lg">{feature.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-[#d9c7a2]">{feature.copy}</p>
+              </article>
+            ))}
+          </div>
+        </SiteContainer>
       </section>
     </>
   );
